@@ -1,0 +1,29 @@
+@font-face {
+   font-family: 'Roboto Regular';
+   src: url('../fonts/Roboto-Regular.eot');
+   src: url('../fonts/Roboto-Regular.eot?#iefix') format('embedded-opentype'),
+   url('../fonts/Roboto-Regular.woff') format('woff'),
+   url('../fonts/Roboto-Regular.ttf') format('truetype');
+   font-weight: normal;
+   font-style: normal;
+}
+
+@mixin g__hover { 
+   font-weight: 500;
+   color: #fc557c;
+   transition: .3s;
+   @media (max-width: 768px) {
+      font-weight: 400;
+      transition: .0s;
+   }
+}
+
+@mixin g__bg__hover { 
+   transform: scale(1.1);
+   transition: .3s;
+   @media (max-width: 768px) {
+      transform: scale(1.0);
+      transition: .0s;
+   }
+}
+
